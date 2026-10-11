@@ -635,7 +635,8 @@ nav a.active{
 
 }
 
-.officers article img{
+.officers article img,
+.officers article .officer-placeholder{
 
   width:100%;
 
@@ -655,6 +656,26 @@ nav a.active{
     contrast(1.04);
 
   background:#151515;
+
+}
+
+.officers article .officer-placeholder{
+
+  display:grid;
+
+  place-items:center;
+
+  color:rgba(240,230,216,.45);
+
+  font-family:Cinzel,Georgia,serif;
+
+  text-transform:uppercase;
+
+  letter-spacing:.14em;
+
+  font-size:.72rem;
+
+  filter:none;
 
 }
 
