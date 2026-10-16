@@ -82,6 +82,13 @@
       letter-spacing:.045em;
       text-shadow:0 18px 42px rgba(0,0,0,.85);
     }
+    .brand h2{
+      margin:0;
+      max-width:920px;
+      text-transform:uppercase;
+      letter-spacing:.045em;
+      text-shadow:0 18px 42px rgba(0,0,0,.85);
+    }
     .hero-copy{
       width:min(780px,100%);
       background:linear-gradient(180deg,rgba(0,0,0,.44),rgba(0,0,0,.24));
@@ -318,6 +325,7 @@
 
       .eyebrow,
       h1,
+      .brand h2,
       .hero-copy,
       .hero-stats,
       .hero-button{
@@ -341,6 +349,15 @@
         background-clip:text;
         color:transparent;
         animation: heroRise .9s ease forwards, titleSheen 7s ease-in-out 1.1s infinite;
+      }
+      .brand h2{
+        background:linear-gradient(90deg,#fff6df 0%,#d0aa62 38%,#fff6df 58%,#b58b44 100%);
+        background-size:220% 100%;
+        -webkit-background-clip:text;
+        background-clip:text;
+        color:transparent;
+        animation: heroRise .9s ease forwards, titleSheen 7s ease-in-out 1.1s infinite;
+        animation-delay:.25s;
       }
       @keyframes titleSheen{
         0%,70%,100%{background-position:0% 50%;}
