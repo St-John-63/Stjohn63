@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stjohns63.ca/sitemap.xml
