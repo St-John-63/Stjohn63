@@ -741,6 +741,18 @@ footer img{
 
 }
 
+footer .sj63-ontario-mark img{
+
+  width:100%;
+
+  height:auto;
+
+  max-width:100%;
+
+  margin:0;
+
+}
+
 footer h3{
 
   font-family:Cinzel,Georgia,serif;
@@ -1379,30 +1391,19 @@ footer a:hover{
 
 }
 
-/* HOME: lodge name and Grand Lodge line on the opening screen */
+/* HOME: lodge name on the opening screen */
 .hero .hero-identity{
   margin:0 0 22px;
 }
 
-.hero .hero-lodge-name,
-.hero .hero-grand-lodge{
+.hero .hero-lodge-name{
   margin:0;
   max-width:680px;
   font-family:Cinzel,Georgia,serif;
-}
-
-.hero .hero-lodge-name{
   font-size:clamp(1.45rem,2.6vw,2.05rem);
   font-weight:500;
   line-height:1.2;
   color:#f7f1e6;
-}
-
-.hero .hero-grand-lodge{
-  margin-top:8px;
-  font-size:clamp(.88rem,1.45vw,1.08rem);
-  line-height:1.45;
-  color:var(--brass2);
 }
 
 /* UPCOMING EVENTS */
@@ -1467,6 +1468,12 @@ footer a:hover{
   .events{
     grid-template-columns:1fr;
   }
+
+  .events-section .section-head{
+    width:min(1380px,92vw);
+    margin-left:auto;
+    margin-right:auto;
+  }
 }
 
 /* PRIVACY, ACCESSIBILITY, TERMS */
@@ -1514,4 +1521,143 @@ footer a:hover{
 
 .legal-page a{
   color:var(--brass2);
+}
+
+.not-found-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:22px;
+}
+
+.not-found-links .text-btn{
+  margin-top:0;
+}
+
+.skip-link{
+  position:fixed;
+  left:12px;
+  top:0;
+  transform:translateY(-120%);
+  z-index:80;
+  background:#d0aa62;
+  color:#0d0d0f;
+  padding:10px 14px;
+  font-weight:800;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  font-size:.75rem;
+}
+
+.skip-link:focus{
+  transform:translateY(8px);
+  outline:2px solid #fff;
+}
+
+.value-icon-wrap picture{
+  display:contents;
+}
+
+.next-meeting{
+  background:#121212;
+  border-bottom:1px solid var(--line);
+}
+
+.next-meeting-card{
+  width:min(980px,100%);
+  margin:0 auto;
+  padding:28px 46px;
+}
+
+.next-meeting h2{
+  margin:0 0 10px;
+  color:#f3e6c8;
+  font-family:Cinzel,Georgia,serif;
+  font-size:.84rem;
+  font-weight:600;
+  letter-spacing:.16em;
+  line-height:1.4;
+  text-transform:uppercase;
+}
+
+.next-meeting-line{
+  margin:0;
+  color:#f4efe6;
+  font-size:1.05rem;
+  line-height:1.55;
+  text-wrap:balance;
+}
+
+.meet-band{
+  border-bottom:1px solid var(--line);
+  background:linear-gradient(145deg,#121212,#0d0d0f);
+}
+
+.meet-card{
+  width:min(980px,100%);
+  margin:0 auto;
+  padding:48px 46px;
+}
+
+.meet-card h2{
+  font-family:Cinzel,Georgia,serif;
+  font-weight:400;
+  font-size:2rem;
+  margin:0 0 22px;
+  line-height:1.2;
+}
+
+.meet-card p{
+  color:#cfc7bb;
+  line-height:1.75;
+  margin-bottom:14px;
+  font-size:.94rem;
+}
+
+@media(max-width:1320px){
+  .header-btn{
+    display:none;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+
+  nav{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    margin:0;
+    padding:20px;
+    background:#0d0d0f;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    flex-direction:column;
+    align-items:flex-start;
+    gap:16px;
+  }
+
+  nav.open{
+    display:flex;
+  }
+}
+
+@media(max-width:1000px){
+  .next-meeting-card{
+    padding:28px 24px;
+  }
+
+  .next-meeting-line{
+    font-size:1rem;
+  }
+
+  .meet-card{
+    padding:34px 24px;
+  }
+
+  .meet-card h2{
+    font-size:1.7rem;
+  }
 }
