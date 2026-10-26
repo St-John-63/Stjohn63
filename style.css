@@ -1662,3 +1662,10 @@ footer a:hover{
     font-size:1.7rem;
   }
 }
+
+/* Keep hash targets below the sticky header (88px, 78px on small screens). */
+main[id],
+section[id],
+article[id]{
+  scroll-margin-top:96px;
+}
